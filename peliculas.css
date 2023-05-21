@@ -1,0 +1,52 @@
+.navbar .home-active::after {
+    width: 0%;
+}
+
+.container2 {
+    display: flex;
+}
+
+.box2-img {
+    margin-right: 10px;
+    height: auto;
+    /* Ajusta el espacio entre la imagen y el texto */
+}
+
+.txt {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.5rem;
+    margin-top: 5rem;
+    margin-right: auto;
+    text-align: left;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+hr {
+    width: 98%;
+    /* Ajusta la longitud de la línea */
+    border-bottom: 1px solid var(--main-color);
+    margin-bottom: 2rem;
+}
+
+p {
+    margin: 1rem;
+}
+
+iframe {
+    margin-top: 2rem;
+    display: flex;
+    align-self: center;
+    width: 90%;
+    height: 60%;
+}
+
+.descripcion:hover {
+    background: #ff2a1f53;
+    border-radius: 2rem;
+    margin: 1rem;
+
+}
