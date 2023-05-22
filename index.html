@@ -22,16 +22,22 @@
     <!--NavBar-->
     <header>
         <a href="#" class="logo">
-            <i class='bx bxs-movie'></i> Peliculas
+            <i class='bx bxs-movie'></i> PirateBay.es
         </a>
         <div class="bx bx-menu" id="menu-icon"></div>
-
+        <script src="buscador.js"></script>
         <!--Menu-->
         <ul class="navbar">
             <li><a href="#home" class="home-active">Home</a></li>
             <li><a href="#peliculas">Peliculas</a></li>
             <li><a href="#prox">Proximamente</a></li>
             <li><a href="#newsletter">Newsletter</a></li>
+            <li>
+                <div class="search-input-container">
+                    <input type="text" id="search-input" placeholder="Buscar...">
+                    <span class="search-icon" id="search-icon"><i class="bx bx-search"></i></span>
+                </div>
+            </li>
         </ul>
         <a href="#" class="btn">Sign In</a>
     </header>
@@ -39,12 +45,12 @@
     <section class="home swiper" id="home">
         <div class="swiper-wrapper">
             <div class="swiper-slide container">
-                
+
                 <img src="img/home1.jpg" alt="">
                 <div class="home-text">
                     <span>Universo Marvel</span>
                     <h1>Venom: Let There <br> Be Carange</h1>
-                    <a href="venom.html" class="btn">Reservar</a>
+                    <a href="venom.html" class="btn">Ver más</a>
                     <a href="#" class="play">
                         <i class='bx bx-play'></i>
                     </a>
@@ -57,7 +63,7 @@
                 <div class="home-text">
                     <span>Universo Marvel</span>
                     <h1>Avanger <br> Infinity War</h1>
-                    <a href="#" class="btn">Reservar</a>
+                    <a href="#" class="btn">Ver más</a>
                     <a href="#" class="play">
                         <i class='bx bx-play'></i>
                     </a>
@@ -69,7 +75,7 @@
                 <div class="home-text">
                     <span>Universo Marvel</span>
                     <h1>Spider-Man <br> Far from Home</h1>
-                    <a href="#" class="btn">Reservar</a>
+                    <a href="#" class="btn">Ver más</a>
                     <a href="#" class="play">
                         <i class='bx bx-play'></i>
                     </a>
@@ -80,99 +86,108 @@
     </section>
 
     <!--PELICULAS-->
-    <section class="movies">
-        <h2 class="heading">Esta semana:</h2>
-        <!--Contenedor de peliculas-->
-        <div class="movies-container">
-            <!--box 1-->
-            <div class="box">
-                <a href="venom.html">
-                  <div class="box-img">
-                    <img src="img/m1.jpg" alt="">
-                  </div>
-                  <h3><a href="venom.html">Venom</a></h3>
-                  <span>120 min | Acción</span>
-                </a>
-              </div>
-              
-            <!--box 2-->
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/m2.jpg" alt="">
-                </div>
-                <h3>Dunkirk</h3>
-                <span>120 min | Aventura</span>
+<section class="movies" id="peliculas">
+    <h2 class="heading">Esta semana:</h2>
+    <!--Contenedor de peliculas-->
+    <div class="movies-container">
+        <!--box 1-->
+        <div class="box" onmouseover="playVideo('video0')" onmouseout="stopVideo('video0')">
+            <div class="box-img">
+                <img src="img/m1.jpg" alt="" id="image0">
+                <div id="video0" style="display: none;"></div>
             </div>
-            <!--box 3-->
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/m3.jpg" alt="">
-                </div>
-                <h3>Batman Vs Superman</h3>
-                <span>120 min | Thriller</span>
-            </div>
-            <!--box 4-->
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/m4.jpg" alt="">
-                </div>
-                <h3>John Wick 2</h3>
-                <span>120 min | Aventura</span>
-            </div>
-            <!--box 5-->
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/m5.jpg" alt="">
-                </div>
-                <h3>Aquaman</h3>
-                <span>120 min | Acción</span>
-            </div>
-            <!--box 6-->
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/m6.jpg" alt="">
-                </div>
-                <h3>Black Panther</h3>
-                <span>120 min | Thriller</span>
-            </div>
-            <!--box 7-->
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/m7.jpg" alt="">
-                </div>
-                <h3>Thor</h3>
-                <span>120 min | Aventura</span>
-            </div>
-            <!--box 8-->
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/m8.png" alt="">
-                </div>
-                <h3>Bumblebee</h3>
-                <span>120 min | Thriller</span>
-            </div>
-            <!--box 9-->
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/m9.jpg" alt="">
-                </div>
-                <h3>Mortal Engines</h3>
-                <span>120 min | Acción</span>
-            </div>
-            <!--box 10-->
-            <div class="box">
-                <div class="box-img">
-                    <img src="img/m10.jpg" alt="">
-                </div>
-                <h3>UnderWorld Blood Wars </h3>
-                <span>120 min | Acción</span>
-            </div>
+            <h3><a href="venom.html">Venom</a></h3>
+            <span>120 min | Acción</span>
         </div>
-    </section>
-   
+
+        <!--box 2-->
+        <div class="box" onmouseover="playVideo('video1')" onmouseout="stopVideo('video1')">
+            <div class="box-img">
+                <img src="img/m2.jpg" alt="" id="image1">
+                <div id="video1" style="display: none;"></div>
+            </div>
+            <h3>Dunkirk</h3>
+            <span>120 min | Aventura</span>
+        </div>
+        <!--box 3-->
+        <div class="box" onmouseover="playVideo('video2')" onmouseout="stopVideo('video2')">
+            <div class="box-img">
+                <img src="img/m3.jpg" alt="" id="image2">
+                <div id="video2" style="display: none;"></div>
+            </div>
+            <h3>Batman Vs Superman</h3>
+            <span>120 min | Thriller</span>
+        </div>
+        <!--box 4-->
+        <div class="box" onmouseover="playVideo('video3')" onmouseout="stopVideo('video3')">
+            <div class="box-img">
+                <img src="img/m4.jpg" alt="" id="image3">
+                <div id="video3" style="display: none;"></div>
+            </div>
+            <h3>John Wick 2</h3>
+            <span>120 min | Aventura</span>
+        </div>
+        <!--box 5-->
+        <div class="box" onmouseover="playVideo('video4')" onmouseout="stopVideo('video4')">
+            <div class="box-img">
+                <img src="img/m5.jpg" alt="" id="image4">
+                <div id="video4" style="display: none;"></div>
+            </div>
+            <h3>Aquaman</h3>
+            <span>120 min | Acción</span>
+        </div>
+        <!--box 6-->
+        <div class="box" onmouseover="playVideo('video5')" onmouseout="stopVideo('video5')">
+            <div class="box-img">
+                <img src="img/m6.jpg" alt="" id="image5">
+                <div id="video5" style="display: none;"></div>
+            </div>
+            <h3>Black Panther</h3>
+            <span>120 min | Thriller</span>
+        </div>
+        <!--box 7-->
+        <div class="box" onmouseover="playVideo('video6')" onmouseout="stopVideo('video6')">
+            <div class="box-img">
+                <img src="img/m7.jpg" alt="" id="image6">
+                <div id="video6" style="display: none;"></div>
+            </div>
+            <h3>Thor</h3>
+            <span>120 min | Aventura</span>
+        </div>
+        <!--box 8-->
+        <div class="box" onmouseover="playVideo('video7')" onmouseout="stopVideo('video7')">
+            <div class="box-img">
+                <img src="img/m8.png" alt="" id="image7">
+                <div id="video7" style="display: none;"></div>
+            </div>
+            <h3>Bumblebee</h3>
+            <span>120 min | Thriller</span>
+        </div>
+        <!--box 9-->
+        <div class="box" onmouseover="playVideo('video8')" onmouseout="stopVideo('video8')">
+            <div class="box-img">
+                <img src="img/m9.jpg" alt="" id="image8">
+                <div id="video8" style="display: none;"></div>
+            </div>
+            <h3>Mortal Engines</h3>
+            <span>120 min | Acción</span>
+        </div>
+        <!--box 10-->
+        <div class="box" onmouseover="playVideo('video9')" onmouseout="stopVideo('video9')">
+            <div class="box-img">
+                <img src="img/m10.jpg" alt="" id="image9">
+                <div id="video9" style="display: none;"></div>
+            </div>
+            <h3>UnderWorld Blood Wars</h3>
+            <span>120 min | Acción</span>
+        </div>
+    </div>
+</section>
+
+
 
     <!--Contenedor proximamente-->
-    <section class="coming" id="coming">
+    <section class="coming" id="prox">
         <h2 class="heading">Proximamente:</h2>
         <div class="coming-container swiper">
             <div class="swiper-wrapper">
@@ -263,25 +278,29 @@
     </section>
 
 
-<section class="footer">
+    <section class="footer">
 
-<div class="social">
+        <div class="social">
 
-<a href="#"><i class='bx bxl-facebook'></i></a>
-<a href="#"><i class='bx bxl-twitter'></i></a>
-<a href="#"><i class='bx bxl-instagram'></i></a>
-<a href="#"><i class='bx bxl-youtube'></i></a>
+            <a href="#"><i class='bx bxl-facebook'></i></a>
+            <a href="#"><i class='bx bxl-twitter'></i></a>
+            <a href="#"><i class='bx bxl-instagram'></i></a>
+            <a href="#"><i class='bx bxl-youtube'></i></a>
 
 
-</div>
+        </div>
 
-</section>
+    </section>
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
     <!--Link to custom JS-->
+    <!-- Incluye la API de YouTube JavaScript -->
+    <script src="https://www.youtube.com/player_api"></script>
     <script src="main.js"></script>
+    <script src="buscador.js"></script>
+
 
 
 </body>
