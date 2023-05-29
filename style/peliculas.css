@@ -50,3 +50,7 @@ iframe {
     margin: 1rem;
 
 }
+img{
+    height: 100%;
+    width: auto;
+}

@@ -16,7 +16,7 @@ function filterHeadings(searchTerm) {
 }
 
 function openFile(searchTerm) {
-    var fileName = searchTerm.toLowerCase() + '.html';
+    var fileName = '../web/'+searchTerm.toLowerCase() + '.html';
     window.location.href = fileName;
 }
 
