@@ -81,34 +81,40 @@ iframe {
         width: 90%;
     }
 
-    header {
-        padding: 20px;
-    }
+    @media screen and (max-width: 968px) {
+        header {
+            padding: 20px;
+        }
 
-    .navbar {
-        display: none;
-    }
+        .navbar {
+            display: none;
+        }
 
-    .navbar.active {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        background: #0203079f;
-        padding: 20px;
-        border-radius: 5px;
-    }
+        .navbar.active {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            top: 70px;
+            right: 20px;
+            background: #0203079f;
+            padding: 20px;
+            border-radius: 5px;
+        }
 
-    .navbar.active li {
-        margin-bottom: 10px;
-    }
+        .navbar.active li {
+            margin-bottom: 10px;
+        }
 
-    .navbar.active a {
-        color: var(--bg-color);
-    }
+        .navbar.active a {
+            color: var(--bg-color);
+        }
 
-    #menu-icon {
-        display: block;
+        #menu-icon {
+            display: block;
+        }
+
+        .navbar .search-input-container {
+            margin-left: auto;
+        }
     }
 }
