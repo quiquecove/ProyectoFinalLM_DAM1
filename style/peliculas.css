@@ -55,7 +55,7 @@ iframe {
     /* Ajusta el valor según sea necesario */
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
     .container2 {
         flex-direction: column;
     }

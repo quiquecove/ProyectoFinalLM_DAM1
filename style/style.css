@@ -321,7 +321,7 @@ h3 a {
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 968px) {
     header {
         padding: 20px;
     }
