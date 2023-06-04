@@ -115,6 +115,7 @@ header:hover {
 
 .navbar .search-input-container {
     position: relative;
+    margin-left: 10rem;
 }
 
 .navbar .search-input-container input[type="text"] {
@@ -351,5 +352,8 @@ h3 a {
 
     #menu-icon {
         display: block;
+    }
+    .navbar .search-input-container {
+        margin-left: auto;
     }
 }
