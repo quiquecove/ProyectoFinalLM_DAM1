@@ -8,51 +8,60 @@
     <title>Login</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="./style/styleLog.css">
-
+    <link rel="stylesheet" href="./style/formStyle.css">
 </head>
 
 <body class="fondo">
-
-
     <header>
-        <a href="index.html" class="logo">
-            <i class='bx bxs-movie'></i> PirateBay.es
+        <a href="login.html" class="logo flicker4">
+            <i class='bx bxs-movie flicker1'></i> PirateBay.es
         </a>
         <div class="bx bx-menu" id="menu-icon"></div>
 
         <!--Menu-->
-        <ul class="navbar">
-            <li><a href="#peliculas">Peliculas</a></li>
-            <li><a href="#prox">Proximamente</a></li>
-            <li><a href="#newsletter">Newsletter</a></li>
-            <li>
-                <div class="search-input-container">
-                    <input type="text" id="search-input" placeholder="Buscar...">
-                    <span class="search-icon"><i class="bx bx-search"></i></span>
-                </div>
-            </li>
-        </ul>
-        <a href="#" class="btn">Sign In</a>
+  
+        <a id="mostrar-formulario" class="btn">Sign In</a>
     </header>
     <div class="wrapper flicker1">
-        <div class="login">
+        <div class="login" id="formulario-login" style="margin-left:auto;">
             <h2 class="loginFirst flicker4">Login</h2>
-            <form action="#" >
-                <div class="input-box loginSpaces">
+            <form action="#">
+                <div class="input-box loginSpaces text-bold">
                     <span class="icon"></span>
-                    <input type="email" required>
+                    <input type="email" id="email" required>
                     <label class="loginSpaces flicker4">Email</label>
                 </div>
-                <div class="input-box loginSpaces flicker4">
+                <div class="input-box loginSpaces flicker4 text-bold">
                     <span class="icon"></span>
-                    <input type="password" required>
+                    <input type="password" id="contrasena" required>
                     <label>Password</label>
                 </div>
+                <button id="boton-acceder" class="btn text-bold">Acceder</button>
             </form>
+
         </div>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+        <div id="formulario-registro" style="display: none;" class="input-box">
+            <h2 class="formularioh2">Registro</h2>
+            <form class="formulario text-bold">
+              <label for="registro_email">Email:</label>
+              <input type="email" id="registro_email" required>
+          
+              <label for="registro_contrasena">Contraseña:</label>
+              <input type="password" id="registro_contrasena" required>
+          
+              <div class="button-container">
+                <button type="button" class="text-bold btnColor " id="boton-volver-atras">Volver Atrás</button>
+
+                <button type="submit" class="btn text-bold boton-atras" id="boton-regis">Registrarse</button>
+              </div>
+            </form>
+          </div>
+          
+
     </div>
+    <script src="script/login.js"></script>
+
 </body>
 
 </html>

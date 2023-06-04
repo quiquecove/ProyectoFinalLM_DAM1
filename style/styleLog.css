@@ -5,7 +5,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('../img/PeliculasCollage.jpg');
+    background: url('../img/pelis.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -139,4 +139,40 @@ body{
     margin-top: 2em;
     font-size: 1.2em;
 }
+.input-box input {
+    color: black;
+    font-size: small;
+    font-weight: bold;
+    font-weight: 900;
+  }
+  .text-bold {
+    font-size: medium;
+    font-weight: bold;
+    font-weight: 900;
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .boton-atras {
+    margin-left: 1em;
+  }
 
+  .btnColor{
+    display: block;
+    margin-bottom: 10px;
+    padding: 10px 20px;
+    background-color: rgb(131, 23, 23);
+    
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  .btnColor:hover {
+    background-color: red; /* Cambia el color a rojo al colocar el cursor sobre el botón */
+  }
