@@ -141,18 +141,17 @@ function getVideoId(playerId) {
       case 'video4':
         return 'dXQBL7u7Zlk';
       case 'video5':
-        return 'DsRcqwGOmUU';
-      case 'video6':
         return 'JK-wAfAvJ0g';
-      case 'video7':
+      case 'video6':
         return 'gNOX4SEQ7aM';
+      case 'video7':
+        return 'PpKSuZ-DI1s';
 
         case 'video8':
-          return 'PpKSuZ-DI1s';
-        case 'video9':
           return 'OE_RVrhUqRk';
-        case 'video10':
+        case 'video9':
           return 'rKHL5PyAPzs';
+
 
     // Agrega los casos para los demás reproductores de video
     // utilizando los ID de video correctos
