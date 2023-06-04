@@ -18,14 +18,13 @@ var usuarios = [
     });
   
     if (usuarioEncontrado) {
+
       console.log("Acceso concedido");
-      // Realizar las acciones necesarias si el acceso es concedido
-      // Por ejemplo, redirigir a otra página: window.location.href = "ruta-de-la-pagina.html";
       window.location.assign("index.html");
 
     } else {
+      
       console.log("Acceso denegado");
-      // Realizar las acciones necesarias si el acceso es denegado
       alert("Usuario o contraseña no válidos");
     }
   }
@@ -46,7 +45,7 @@ var usuarios = [
   
     // Obtener la sección de inicio de sesión
     var seccionLogin = document.querySelector(".login");
-
+    //Obetener el formulario de Login
     var formularioLogin = document.getElementById("formulario-login");
   
     // Agregar un evento de clic al botón de mostrar formulario
@@ -86,7 +85,7 @@ var usuarios = [
         seccionLogin.style.display = "block";
         formularioRegistro.style.marginTop = "16em";
         formularioLogin.style.marginLeft = "10em";
-        console.log(usuarios);
+        console.log(usuarios); //Irene, con esto puedes ver que se añaden los nuevos usuarios válidos en cuanto pulsas el botón de registrar
       }
     });
 
